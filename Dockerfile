@@ -1,5 +1,6 @@
-LABEL maintainer "Daevien <github@daevien.com>"
 FROM caddy:builder AS builder
+
+LABEL maintainer "Daevien <github@daevien.com>"
 
 RUN xcaddy build  \
     --with github.com/caddy-dns/cloudflare \
